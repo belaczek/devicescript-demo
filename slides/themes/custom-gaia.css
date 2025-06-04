@@ -1,0 +1,56 @@
+/* custom-gaia.css */
+/* @theme custom-gaia */
+
+@import "gaia";
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+img[alt~="center"] {
+    display: block;
+    margin: 0 auto;
+}
+
+svg[id^="mermaid-"] {
+    max-width: 960px;
+    max-height: 600px;
+}
+
+p,
+section,
+li,
+ul {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+code,
+pre {
+    font-family: "Monaspace Neon", monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.columns3 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}

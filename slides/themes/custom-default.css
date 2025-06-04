@@ -1,0 +1,55 @@
+/* custom-default.css */
+/* @theme custom-default */
+
+@import "default";
+
+@import "font";
+
+.columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+.columns3 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+img[alt~="center"] {
+    display: block;
+    margin: 0 auto;
+}
+
+svg[id^="mermaid-"] {
+    max-width: 960px;
+    max-height: 600px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+section {
+    font-family: "IBM Plex Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "IBM Plex Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+code,
+pre {
+    font-family: "monaco", "Monaspace Neon", monospace;
+    line-height: 1.5;
+}

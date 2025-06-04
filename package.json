@@ -1,10 +1,11 @@
 {
     "name": "devicescript-demo",
     "version": "0.0.0",
-    "private": "Please use 'yarn devs add npm' to make this a publishable package",
-    "dependencies": {},
+    "dependencies": {
+        "serialport": "^13.0.0"
+    },
     "devDependencies": {
-        "@devicescript/cli": "latest"
+        "@devicescript/cli": "^2.16.4"
     },
     "scripts": {
         "setup": "devicescript build --quiet",
